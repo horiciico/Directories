@@ -1,21 +1,19 @@
 # Directories
 
-A simple Java GUI app that allows the user to navigate the computer’s file system.
+A simple Java GUI app that allows the user to navigate the computer’s file system. The GUI is built with the AWT library.
 
 ## Features
 - Navigate folders and files via a GUI
 - Basic file-system browsing
+- Displays the root and all subfolders of a folder as an indented list
 
-## Requirements
-- Java (JDK 8+ recommended)
+## Color meaning
+- red — root folder
+- green — a folder that is empty *or* requires elevated privileges to open (can’t be expanded further)
+- black — a non-empty, accessible folder
+- blue — a file (can’t be expanded further)
 
-## Getting started
-1. Clone the repo.
-2. Open the project in your IDE (IntelliJ IDEA / Eclipse / NetBeans).
-3. Build and run the main class.
+### Info
+Double-click a folder name to expand it. If the folder is accessible and not empty, its subfolders and files will appear below it with indentation.
 
-## Contributing
-Pull requests are welcome. Please open an issue to discuss major changes first.
-
-## License
-No license specified.
+This program does **not** modify the file system (it can’t add or delete files); it only displays the existing structure.
